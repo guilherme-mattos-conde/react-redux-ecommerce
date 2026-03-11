@@ -1,7 +1,7 @@
 import { Snackbar, Alert } from "@mui/material";
 
 import { useSelector, useDispatch } from "react-redux";
-import { hideAlert } from "../store/alertSlice";
+import { hideAlert } from "../store/alert/alertSlice";
 
 const AlertSnackbar = () => {
     const alert = useSelector(state => state.alert);

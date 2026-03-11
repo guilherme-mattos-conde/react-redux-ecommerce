@@ -10,7 +10,7 @@ import { cartSelectors, clearCart } from "../../store/cart/cartSlice";
 import { addOrder } from "../../store/order/orderSlice";
 import { resetQuantities } from "../../store/product/productSlice";
 
-import { formValidation } from "../../validations/formValidation";
+import formValidation from "../../validations/formValidation";
 import formatPrice from "../../utils/formatPrice";
 
 import RenderInput from "./RenderInput";
