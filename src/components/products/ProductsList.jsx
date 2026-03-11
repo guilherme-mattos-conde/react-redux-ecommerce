@@ -4,6 +4,8 @@ import { productSelectors } from "../../store/product/productSlice";
 
 import ProductCard from "./ProductCard";
 
+import "../../styles/products/products-list.css"
+
 const ProductsList = () => {
     const products = useSelector(state => productSelectors.selectAll(state));
 

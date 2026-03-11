@@ -1,0 +1,16 @@
+.products-container {
+    max-width: 968px;
+    margin: 50px auto;
+}
+
+@media (max-width: 1139px) {
+	.products-container {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 719px) {
+	.products-container {
+        max-width: 300px;
+    }
+}

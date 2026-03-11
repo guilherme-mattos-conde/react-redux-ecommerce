@@ -1,3 +1,5 @@
+import "../styles/svg-button.css"
+
 const SvgButton = ({ imagem, imagemHover, ...props }) => {
     return (
         <button className="svg-button" {...props}>

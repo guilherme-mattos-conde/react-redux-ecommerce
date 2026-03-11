@@ -6,6 +6,8 @@ import { orderSelectors } from "../store/order/orderSlice";
 import CardCheckout from "../components/checkout/CardCheckout";
 import OrderNotFound from "../components/checkout/OrderNotFound";
 
+import "../styles/checkout/main.css"
+
 const Checkout = () => {
     const [searchParams] = useSearchParams();
     const id = Number(searchParams.get("id"));

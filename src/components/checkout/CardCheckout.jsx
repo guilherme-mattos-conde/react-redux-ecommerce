@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import formatPrice from "../../utils/formatPrice";
 
+import "../../styles/checkout/card-checkout.css"
+
 const CardCheckout = ({ order }) => {
     const navigate = useNavigate();
 

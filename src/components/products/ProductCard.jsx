@@ -9,6 +9,8 @@ import formatPrice from "../../utils/formatPrice";
 
 import SvgButton from "../SvgButton";
 
+import "../../styles/products/product-card.css"
+
 const ProductCard = ({ id }) => {
     const product = useSelector(state => productSelectors.selectById(state, id));
     const productAddedToCart = useSelector(state => cartSelectors.selectById(state, id));

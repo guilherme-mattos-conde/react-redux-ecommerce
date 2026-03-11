@@ -1,0 +1,231 @@
+.product-card {
+    width: 230px;
+    overflow: hidden;
+    position: relative;
+    height: 340px;
+}
+
+.product-card .MuiPaper-root-MuiCard-root {
+    box-shadow: none;
+}
+
+.product-card:hover {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 15px;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-card .payment-description {
+    color: var(--color5);
+    font-size: .6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.product-card .name {
+    font-size: .8rem;
+    margin-bottom: 4px;
+}
+
+.product-card .price {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-content {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.5s ease;
+}
+
+.product-card:hover .product-content {
+    top: auto;
+    bottom: 0;
+}
+
+.MuiCardContent-root.product-content:last-child {
+    padding: 15px;
+}
+
+.quantity-container {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity ease;
+}
+
+.product-card:hover .quantity-container {
+    max-height: 120px;
+    opacity: 1;
+}
+
+.product-card .quantity-controls {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card .quantity-button {
+    min-width: 35px;
+    height: 35px;
+    color: var(--color1);
+    border-radius: 50%;
+}
+
+.product-card .quantity-button:hover {
+    cursor: pointer;
+}
+
+.product-card .quantity-field {
+    width: 55%;
+}
+
+.product-card .quantity-field input {
+    text-align: center;
+    font-size: 0.8rem;
+    height: 25px;
+}
+
+.MuiOutlinedInput-input.MuiInputBase-inputSizeSmall {
+    padding: 5px !important;
+}
+
+.product-card .add-to-cart-button {
+    background-color: var(--color3);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    height: 30px;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.product-card .add-to-cart-button:hover {
+    background-color: var(--color4);
+}
+
+@media (min-width: 720px) and (max-width: 1139px) {
+    .product-card {
+        width: 200px;
+        height: 310px;
+    }
+
+    .product-card .payment-description {
+        font-size: .55rem;
+    }
+
+    .product-card .name {
+        font-size: .68rem;
+    }
+
+    .product-card .price {
+        font-size: .8rem;
+        margin: 5px 0;
+    }
+
+    .product-content {
+        top: 200px;
+    }
+
+
+    .product-card:hover .quantity-container {
+        max-height: 120px;
+    }
+
+    .product-card .quantity-controls {
+        margin: 10px 0;
+    }
+
+    .product-card .quantity-button {
+        min-width: 30px;
+        height: 30px;
+    }
+
+    .product-card .quantity-field {
+        width: 50%;
+    }
+
+    .product-card .quantity-field input {
+        font-size: 0.7rem;
+        height: 20px;
+    }
+
+    .product-card .add-to-cart-button {
+        font-size: 0.6rem;
+        height: 25px;
+    }
+}
+
+@media (max-width: 719px) {
+
+    .product-card {
+        width: 300px;
+        height: 425px;
+    }
+
+    .product-card .payment-description {
+        font-size: .7rem;
+    }
+
+    .product-card .name {
+        font-size: .8rem;
+    }
+
+    .product-card .price {
+        font-size: .9rem;
+        margin: 5px 0;
+    }
+
+    .product-content {
+        top: 300px;
+    }
+
+    .product-card:hover .quantity-container {
+        max-height: 120px;
+    }
+
+    .product-card .quantity-controls {
+        margin: 15px 0;
+    }
+
+    .product-card .quantity-button {
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .product-card .quantity-field {
+        width: 55%;
+    }
+
+    .product-card .quantity-field input {
+        font-size: 0.8rem;
+        height: 30px;
+    }
+
+    .product-card .add-to-cart-button {
+        height: 40px;
+    }
+}

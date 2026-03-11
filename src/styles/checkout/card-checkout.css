@@ -1,0 +1,72 @@
+.checkout-card {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 350px;
+}
+
+.checkout-card .texts {
+    text-align: center;
+}
+
+.checkout-card .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.checkout-card .text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.checkout-card .text span {
+    color: var(--color3);
+    font-size: 1.05rem;
+}
+
+.checkout-card .image {
+    width: 150px;
+    margin: 40px 0;
+    transform: translateX(20px);
+}
+
+.checkout-card .button {
+    font-size: .85rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    width: 200px;
+    background-color: var(--color6);
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.checkout-card .MuiCardContent-root {
+    padding: 0 !important;
+}
+
+@media (max-width: 719px) {
+    .checkout-card {
+        padding: 0 20px;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    .checkout-card .name {
+        font-size: 1.4rem;
+    }
+
+    .checkout-card .text {
+        font-size: .9rem;
+    }
+
+    .checkout-card .text span {
+        font-size: 1rem;
+    }
+}

@@ -1,6 +1,8 @@
 import { Card, CardContent, CardMedia, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
+import "../../styles/checkout/order-not-found.css"
+
 const OrderNotFound = () => {
     const navigate = useNavigate();
 

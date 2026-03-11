@@ -1,0 +1,91 @@
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+.customer-form .form-components {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.customer-form .inputs {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.customer-form .div-select {
+    width: 15%;
+}
+
+.summary {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-width: 15%;
+}
+
+.summary .total-price {
+    text-align: right;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.summary .button {
+    font-weight: bold;
+    background-color: var(--color6);
+    box-shadow: none !important;
+    border: none !important;
+}
+
+@media (max-width: 1139px) {
+    .customer-form .form-components {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .customer-form .inputs {
+        width: 100%;
+    }
+
+    .customer-form .div-select {
+        width: 30%;
+    }
+
+    .summary {
+        margin-top: 70px;
+        min-width: 15%;
+    }
+
+    .summary .total-price {
+        font-size: 18px;
+    }
+
+    .summary .input{
+        padding: 5px !important;
+    }
+}
+
+@media (max-width: 719px) {
+    .customer-form .inputs {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .customer-form .div-select {
+        width: 100%;
+    }
+
+    .summary {
+        margin-top: 30px;
+        min-width: 15%;
+        margin-right: 10px;
+    }
+}

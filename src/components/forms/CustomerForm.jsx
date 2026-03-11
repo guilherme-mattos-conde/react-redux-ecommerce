@@ -16,6 +16,8 @@ import formatPrice from "../../utils/formatPrice";
 import RenderInput from "./RenderInput";
 import RenderSelect from "./RenderSelect";
 
+import "../../styles/forms/customer-form.css"
+
 const CustomerForm = ({ handleSubmit }) => {
     const cart = useSelector(state => cartSelectors.selectAll(state));
     const dispatch = useDispatch();

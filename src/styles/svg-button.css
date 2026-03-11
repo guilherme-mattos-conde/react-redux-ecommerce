@@ -1,0 +1,24 @@
+.svg-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.svg-button img {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.svg-button .icon-hover {
+    display: none;
+}
+
+.svg-button:hover .icon-default {
+    display: none;
+}
+
+.svg-button:hover .icon-hover {
+    display: block;
+}
